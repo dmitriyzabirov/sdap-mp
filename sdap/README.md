@@ -41,3 +41,6 @@ Same steps at all three; only gate rigor and the model ceiling move.
   adjusting to whatever your Claude Code build accepts; the ladder logic is in `config/models.json`.
 - `fable` sits above `opus` only at L3; if your account can't route it, L3's ceiling
   falls back to `opus` — change one line in `config/models.json`.
+
+## License
+Apache License 2.0 (see `LICENSE`). Copies and derivative works must keep the copyright notice, the license text and the `NOTICE` file, and mark changed files. Copyright 2026 Dmitrii Zabirov.

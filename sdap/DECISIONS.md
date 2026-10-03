@@ -13,6 +13,7 @@ Append: `date · decision · why`.
 - 2026-07-02 · Seal (S9) stays thin: baseline snapshot + audit record only, trusting S8's real verdict (economy rule #2: never recompute proven). Re-verifying the full suite at seal is redundant — it was Workflow over-caution after the fakery episode, dropped.
 - 2026-07-02 · Packaged as a user-scope Claude Code plugin `sdap` (marketplace `sdap-mp`) + an in-session Workflow runner, so it runs from chat without a nested `claude` session. Namespacing (plugin skills → `sdap:*`) worked in practice; no fix needed.
 - 2026-10-03 · `config/models.json` model IDs refreshed again: `sonnet→claude-sonnet-5-5`, `opus→claude-opus-5-5`, `fable→claude-fable-5-1` (haiku unchanged); plugin version 0.1.1; `version` kept only in `plugin.json` · the marketplace now lives in its own private GitHub repo (`dmitriyzabirov/sdap-mp`) so a team gets one pinned version; stale model strings otherwise break S7/S8 routing.
+- 2026-10-03 · license Apache-2.0 (`LICENSE`, `NOTICE` at the repo root and inside `sdap/`, which is what a plugin install copies); repo made public; plugin version 0.1.2 · the owner wants authorship preserved: Apache keeps the notice through `NOTICE` and adds an express patent grant and no trademark rights.
 
 ## Deferred / optional
 - Per-node tier memory: start historically-hard nodes higher to skip wasted cheap attempts, paired with periodic downward retry (in case upstream changes made a node easier). Trades cost for speed. Not implemented — current model always starts each node at `ladder[0]` (cheapest).
