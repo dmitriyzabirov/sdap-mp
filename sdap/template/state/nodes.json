@@ -1,0 +1,10 @@
+{
+  "level": "L1",
+  "sealed": false,
+  "nodes": [
+    {"id":"S1","step":"S1","domain":"none","status":"pending","live":true,"rung":0,"hash":null,"last_verdict":null},
+    {"id":"S2","step":"S2","domain":"none","status":"pending","live":true,"rung":0,"hash":null,"last_verdict":null},
+    {"id":"S3","step":"S3","domain":"none","status":"pending","live":true,"rung":0,"hash":null,"last_verdict":null}
+  ],
+  "_note": "Domain-scoped nodes (S4-S8 per live domain) plus S6 and S9 are appended by step-allocate once the live domains are known."
+}

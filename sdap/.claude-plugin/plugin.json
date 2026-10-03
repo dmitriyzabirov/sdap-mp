@@ -1,0 +1,8 @@
+{
+  "name": "sdap",
+  "version": "0.1.1",
+  "description": "SDAP — Spec-Driven Agentic Pipeline: multi-domain (sw/hw/me) build as an S1-S9 state machine with pass/rollback/escalate gates, cheap-first model routing that climbs only on failure, and recompute-only-dirty economy.",
+  "author": {
+    "name": "Dmitrii Zabirov"
+  }
+}

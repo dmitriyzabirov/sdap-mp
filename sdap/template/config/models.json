@@ -1,0 +1,61 @@
+{
+  "_comment": "Model routing. Ladders start at sonnet (haiku removed 2026-07-18: in the sim build every S7 milestone attempted on haiku needed a sonnet retry; haiku kept only as a tier for manual use). Climb one rung per rollback, truncated at the level ceiling. Orchestrator pinned to sonnet.",
+  "tiers": [
+    "haiku",
+    "sonnet",
+    "opus",
+    "fable"
+  ],
+  "models": {
+    "haiku": "claude-haiku-4-5-20251001",
+    "sonnet": "claude-sonnet-5-5",
+    "opus": "claude-opus-5-5",
+    "fable": "claude-fable-5-1"
+  },
+  "level_ceiling": {
+    "L1": "sonnet",
+    "L2": "opus",
+    "L3": "fable"
+  },
+  "orchestrator": "sonnet",
+  "ladders": {
+    "S1": [
+      "sonnet",
+      "opus"
+    ],
+    "S2": [
+      "sonnet",
+      "opus"
+    ],
+    "S3": [
+      "sonnet",
+      "opus",
+      "fable"
+    ],
+    "S4": [
+      "sonnet",
+      "opus"
+    ],
+    "S5": [
+      "sonnet",
+      "opus"
+    ],
+    "S6": [
+      "sonnet",
+      "opus",
+      "fable"
+    ],
+    "S7": [
+      "sonnet",
+      "opus"
+    ],
+    "S8": [
+      "sonnet",
+      "opus"
+    ],
+    "S9": [
+      "sonnet"
+    ]
+  },
+  "policy": "effective_ladder = ladders[step] truncated so no rung exceeds level_ceiling[level]. attempt 0 -> effective_ladder[0]. on rollback -> rung+1. on rollback at last rung -> escalate."
+}

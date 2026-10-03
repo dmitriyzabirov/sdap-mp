@@ -1,0 +1,14 @@
+{
+  "name": "sdap-mp",
+  "description": "SDAP: spec-driven agentic pipeline for building software from requirements (private, Business Motherboard team).",
+  "owner": {
+    "name": "Dmitrii Zabirov"
+  },
+  "plugins": [
+    {
+      "name": "sdap",
+      "source": "./sdap",
+      "description": "SDAP — Spec-Driven Agentic Pipeline: S1-S9 state machine, cheap-first model routing, recompute-only-dirty economy."
+    }
+  ]
+}
